@@ -1,0 +1,2 @@
+f8523a58a24d9968d9dbeef3b172a26addbd70d27db889175485d69680b73bd4  github_issue_assistant-0.1.0.difypkg
+ffdeb2c4414431e85bc89cc5fc592328908c818de7a2c78029719850f09a1697  workflow/github_issue_ai_assistant.yml

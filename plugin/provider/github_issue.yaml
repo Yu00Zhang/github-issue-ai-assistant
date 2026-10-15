@@ -1,0 +1,32 @@
+identity:
+  author: issueassistant
+  name: github_issue
+  label:
+    en_US: GitHub Issue
+    zh_Hans: GitHub Issue
+  description:
+    en_US: Read GitHub Issues using the official REST API.
+    zh_Hans: 使用 GitHub 官方 REST API 读取 Issue。
+  icon: icon.svg
+  tags:
+    - productivity
+    - utilities
+credentials_for_provider:
+  github_token:
+    type: secret-input
+    required: false
+    label:
+      en_US: GitHub token (optional)
+      zh_Hans: GitHub Token（可选）
+    placeholder:
+      en_US: Leave empty for public issues
+      zh_Hans: 读取公开 Issue 时可留空
+    help:
+      en_US: Optional personal access token. For private repositories, grant Issues read access to only the repositories you need. Never paste this token into the workflow inputs.
+      zh_Hans: 可选的个人访问令牌。私有仓库仅授予所需仓库的 Issues 读取权限。不要将 Token 填入工作流输入。
+    url: https://github.com/settings/personal-access-tokens
+tools:
+  - tools/get_issue.yaml
+extra:
+  python:
+    source: provider/github_issue.py

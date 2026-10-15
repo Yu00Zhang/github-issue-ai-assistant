@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-issue-ai-assistant"
+version = "0.1.0"
+description = "A read-only GitHub Issues Tool plugin for Dify"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "dify-plugin==0.10.2",
+  "httpx==0.28.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["lib*", "provider*", "tools*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
